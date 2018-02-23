@@ -1,4 +1,5 @@
 ## Test Git
+Sistema de control de versinoes para el mantenimiento efectivo y confiable de archivos.
 
 ### Zonas de Git
 1. Directorio de trabajo
