@@ -19,4 +19,3 @@ git config --global user.email "valeriazotarelli@gmail.com"
 git config --global core.editor nano
 git config --list
 ```
-Esta línea se agregó desde un equipo Linux conectado al repositorio local con Github a través de HTTPS.
