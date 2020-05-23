@@ -19,3 +19,15 @@ git config --global user.email "valeriazotarelli@gmail.com"
 git config --global core.editor nano
 git config --list
 ```
+## Configuración SSH en Linux
+Desde la terminal seguimos los siguientes pasos.
+
+1. Ejecutamos el comando `ssh-keygen -t rsa -b 4096 -C "email@ejemplo.com"`
+El correo debe ser el mismo con el que nos registramos en Github.
+Cuando nos pida la ruta escribimos `/home/[usuario]/.ssh/github_rsa`
+
+2. Iniciamos ssh-agent en background ejecutando el comando `eval "$(ssh-agent -s)"`
+
+3. Agregamos la clave SSH generada a ssh-agent ejecutando el comando `ssh-add ~/.ssh/github_rsa`
+
+4. Desde ahora podemos hacer pull y push sin que Github nos esté pidiendo los datos de acceso.
