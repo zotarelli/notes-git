@@ -30,4 +30,9 @@ Cuando nos pida la ruta escribimos `/home/[usuario]/.ssh/github_rsa`
 
 3. Agregamos la clave SSH generada a ssh-agent ejecutando el comando `ssh-add ~/.ssh/github_rsa`
 
-4. Desde ahora podemos hacer pull y push sin que Github nos esté pidiendo los datos de acceso.
+4. Usar el comando `cat ~/.ssh/github_rsa.pub`.
+Con este comando vemos el contenido del archivo, copiamos todo texto que nos muestra.
+
+5. Ir a las configuraciones de nuestro perfil de Github y agregar una nueva llave SSH con el contenido que hemos copiado de `github_rsa.pub`.
+
+Desde ahora podemos hacer pull y push sin que Github nos esté pidiendo los datos de acceso.
